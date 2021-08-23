@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Basic page needs-->
+    <meta charset="UTF-8">
+    <title>Abel Landing Page</title>
+    <meta name="description" content="The landing page of a business called Abel.">
+    <meta name="author" content="Manuel Salazar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Other stuff-->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" type="text/css">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/abel-logo.png">
+</head>
+
+<body>
+    <!--Home section-->
+    <div id="home">
+        <header id="header">
+            <!--Logo-->
+            <div id="logo-div">
+                <img id="header-img" src="images/abel-logo.png" alt="Alimentos Abel Logo">
+            </div>
+
+            <!--Navigation bar-->
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#home">HOME</a>
+                        <a class="nav-link" href="#about-us">ABOUT US</a>
+                        <a class="nav-link" href="#our-process">OUR PROCESS</a>
+                        <a class="nav-link" href="#our-products">OUR PRODUCTS</a>
+                        <a class="nav-link" href="#contact-us">CONTACT US</a>   
+                    </li>
+                </ul>
+            </nav>     
+        </header>    
+    </div>
+
+    <!--About us-->
+    <div id="about-us">
+        <!--Title-->
+        <div id="about-us-title">
+            <h1>
+                ABOUT US
+            </h1>
+        </div>
+
+        <!--Image-->
+        <div id="image-div">
+            <img id="about-us-img" src="images/about-us-image.jpg" alt="An image of bread and other kind of food">
+        </div>
+        
+        <!--Text-->
+        <div id="about-us-text">
+            <p>
+                We are a bakery located in Colombia. We have been working for more than 15 years with tradition and love. Our experienced bakers use the best ingredients to reach the best quality possible. This together with our amazing service, makes us one of the best options in the market. One of the most important things of our brand is our philosophy of hardwork and excellence. Everything is made with love and patience.    
+            </p>
+        </div>
+    </div>
+
+    <!--Our process-->
+    <div id="our-process">
+        <!--Title-->
+        <div>
+            <h1 id="our-process-title">
+                OUR PROCESS
+            </h1>
+        </div>
+
+        <!--Video-->
+        <div id="our-process-video">
+            <iframe id="video" allowfullscreen src="https://www.youtube.com/watch?v=Aw73bVIv4cs&list=WL&index=2" frameborder="0"></iframe>   
+        </div>
+    </div>
+
+    <!--Our products-->
+    <div id="our-products">
+        <!--Title-->
+        <div>
+            <h1 id="our-products-title">
+                OUR PRODUCTS
+            </h1>
+        </div>
+        
+        <!--Bread-->
+        <div class="product" id="bread">
+            <!--Image-->
+            <div class="product-image">
+                <img id="bread-image" src="images/bread.png" alt="An image of bread">
+            </div>
+            
+            <!--Description-->
+            <div class="product-text">
+                <h2 class="product-title">BREAD</h2>
+                <p class="product-description">Homemade bread perfect to</p> 
+                <p class="product-description">eat with anything.</p>
+                <p class="product-weight">90 g</p>
+                <h2 class="product-price">$10</h2>   
+            </div>
+        </div>
+
+        <!--Croissant-->
+        <div class="product" id="croissant">
+            <!--Image-->
+            <div class="product-image">
+                <img id="croissant-image" src="images/croissant.png" alt="An image of a croissant">
+            </div>
+            
+            <!--Description-->
+            <div class="product-text">
+                <h2 class="product-title">CROISSANT</h2>
+                <p class="product-description">Perfectly baked french croissant</p> 
+                <p class="product-description">to eat at breakfast.</p>
+                <p class="product-weight">70 g</p>
+                <h2 class="product-price">$5</h2>   
+            </div>
+        </div>
+
+        <!--Muffin-->
+        <div class="product" id="muffin">
+            <!--Image-->
+            <div class="product-image">
+                <img id="muffin-image" src="images/muffin.png" alt="An image of a muffin">
+            </div>
+            
+            <!--Description-->
+            <div class="product-text">
+                <h2 class="product-title">MUFFIN</h2>
+                <p class="product-description">The classic chocolate muffin</p> 
+                <p class="product-description">with chocolate chips.</p>
+                <p class="product-weight">40 g</p>
+                <h2 class="product-price">$3</h2>   
+            </div>
+        </div>
+    </div>
+
+    <!--Contact us-->
+    <div id="contact-us">
+        <!--Title-->
+        <div>
+            <h1 id="contact-us-title">
+                CONTACT US
+            </h1>
+        </div>
+
+        <!--Description-->
+        <div>
+            <p id="contact-us-description">
+                Join the Abel club and receive special offers weekly   
+            </p>
+        </div>
+
+        <!--Form-->
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input 
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email adress"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+            >
+
+            <input id="submit" type="submit" value="SEND" class="btn"/>
+        </form>
+    </div>
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

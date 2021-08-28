@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Basic page needs-->
     <meta charset="UTF-8">
     <title>Abel Landing Page</title>
     <meta name="description" content="The landing page of a business called Abel.">
@@ -9,51 +8,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Other stuff-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" type="text/css">
 
-    <!--Favicon-->
-    <link rel="icon" type="image/png" href="images/abel-logo.png">
+    <link rel="icon" type="image/png" href="images/logo-abel.png">
 </head>
 
 <body>
-    <!--Home section-->
     <div id="home">
         <header id="header">
-            <!--Logo-->
-            <div id="logo-div">
-                <img id="header-img" src="images/abel-logo.png" alt="Alimentos Abel Logo">
+            <div id="home-image">
+                <a href="#home" class="logo">
+                    <img src="images/logo-abel.png" id="header-img" alt="Abel Alimentos Logo">
+                </a>
             </div>
 
-            <!--Navigation bar-->
             <nav id="nav-bar">
-                <ul>
-                    <li>
-                        <a class="nav-link" href="#home">HOME</a>
-                        <a class="nav-link" href="#about-us">ABOUT US</a>
-                        <a class="nav-link" href="#our-process">OUR PROCESS</a>
-                        <a class="nav-link" href="#our-products">OUR PRODUCTS</a>
-                        <a class="nav-link" href="#contact-us">CONTACT US</a>   
-                    </li>
-                </ul>
-            </nav> 
-        </header>  
+                <div id="nav-wrapper">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-process">OUR PROCESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-products">OUR PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header> 
         
-        <div id="welcome-text">
-            <h2 id="title">
-                WELCOME TO OUR OFFICIAL PAGE
-            </h2>
+        <div id="welcome-section">
+            <div id="title">
+                <h2>
+                    WELCOME TO OUR OFFICIAL PAGE
+                </h2>
+            </div>
 
-            <p id="subtitle">
-                ALL YOU NEED IN ONE PLACE
-            </p>
+            <div id="sub-title">
+                <h2>
+                    ALL YOU NEED IN ONE PLACE
+                </h2>
+            </div>
         </div>
     </div>
 
     <!--About us-->
     <div id="about-us">
-        <!--Title-->
         <div>
             <h1 id="about-us-title">
                 ABOUT US
@@ -61,7 +71,6 @@
         </div>
 
         <div id="about-us-main">
-            <!--Image-->
         <div id="image-div">
             <img id="about-us-img" src="images/about-us-image.jpg" alt="An image of bread and other kind of food">
         </div>

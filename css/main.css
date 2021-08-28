@@ -7,13 +7,6 @@
     --ff-primary: "Inter", sans-serif;
 }
 
-*,
-*::before,
-*::after {
-box-sizing: border-box;
-}
-
-/* Setting my margins to 0 */
 body,
 h1,
 h2,
@@ -22,100 +15,84 @@ p {
 margin: 0;
 }
 
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
 body {
     font-family: var(--ff-primary);
-    font-size: calc(0.625vmin + 0.75rem);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Header */
-#header {
+#home {
+    background-color: var(--black-clr);  
+}
+
+header {
     display: flex;
-    background: url(../images/hero-image.jpg) no-repeat center;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #header-img {
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin: 3.2rem 0 1.8rem 0;
 }
 
-/* About us */
-#about-us-main {
+ul {
+    display: flex;
+    list-style: none;
+    padding-inline: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-clr)
+}
+
+nav {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#nav-bar {
+    padding: 3.5625rem 3.625rem 2.5rem 2.375rem;
     display: flex;
 }
 
-#about-us {
-    background-color: var(--black-clr);
+.nav-item + .nav-item {
+    margin-left: 4rem;
 }
 
-#about-us-title {
-    font-weight: 700;
+#welcome-section {
+    padding: 2.5rem 0 6rem 0;
+}
+
+#title {
+    font-weight: 900;
+    font-size: 2.5rem;
     text-align: center;
-    padding: 1.5rem;
+    color: var(--white-clr);
+}
+
+#sub-title {
+    font-weight: 400;
+    font-size: 1.4;
+    text-align: center;
     color: var(--yellow-clr);
 }
 
-#about-us-img {
-    width: 40.25rem;
-    height: 25.4375rem;  
-}
-
-#image-div {
-    padding: 0 3rem 3rem 5rem;
-}
-
-#about-us-text {
-    padding: 0 3rem 3rem 0;
-    text-align: center;
-}
+/* About us */
 
 /* Our process */
-#our-process {
-    background-color: var(--white-clr);
-}
-
-#our-process-title {
-    font-weight: 700;
-    text-align: center;
-    padding: 1.5rem;
-    color: var(--yellow-clr);   
-}
-
-#our-process > iframe {
-    max-width: 640px;
-    width: 100%; 
-}
 
 /* Our products */
-#our-products {
-    background-color: var(--black-clr);
-}
-
-#our-products-title {
-    font-weight: 700;
-    text-align: center;
-    padding: 1.5rem;
-    color: var(--yellow-clr);    
-}
-
-.product {
-    display: flex;
-}
 
 /* Contact us */
-#contact-us {
-    background-color: var(--white-clr);
-}
-
-#contact-us-title {
-    font-weight: 700;
-    text-align: center;
-    padding: 1.5rem;
-    color: var(--yellow-clr);    
-}
-
-#contact-us-description {
-    padding: 0 3rem;
-    color: var(--black-clr);
-    text-align: center;
-}
-

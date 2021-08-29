@@ -62,25 +62,24 @@
         </div>
     </div>
 
-    <!--About us-->
     <div id="about-us">
         <div>
-            <h1 id="about-us-title">
+            <h1 id="about-us-title" class="title">
                 ABOUT US
             </h1>
         </div>
 
         <div id="about-us-main">
-        <div id="image-div">
-            <img id="about-us-img" src="images/about-us-image.jpg" alt="An image of bread and other kind of food">
-        </div>
+            <div id="image-div">
+                <img id="about-us-img" src="images/about-us-image.jpg" alt="An image of bread and other kind of food">
+            </div>
         
-        <!--Text-->
-        <div id="about-us-text">
-            <p>
-                We are a bakery located in Colombia. We have been working for more than 15 years with tradition and love. Our experienced bakers use the best ingredients to reach the best quality possible. This together with our amazing service, makes us one of the best options in the market. One of the most important things of our brand is our philosophy of hardwork and excellence. Everything is made with love and patience.    
-            </p>
-        </div>
+            <!--Text-->
+            <div id="about-us-text">
+                <p>
+                    We are a bakery located in Colombia. We have been working for more than 15 years with tradition and love. Our experienced bakers use the best ingredients to reach the best quality possible. This together with our amazing service, makes us one of the best options in the market. One of the most important things of our brand is our philosophy of hardwork and excellence. Everything is made with love and patience.    
+                </p>
+            </div>
         </div>
     </div>
 
@@ -88,14 +87,14 @@
     <div id="our-process">
         <!--Title-->
         <div>
-            <h1 id="our-process-title">
+            <h1 id="our-process-title" class="title">
                 OUR PROCESS
             </h1>
         </div>
 
         <!--Video-->
         <div id="our-process-video">
-            <iframe id="video" allowfullscreen src="https://www.youtube.com/watch?v=Aw73bVIv4cs&list=WL&index=2" frameborder="0"></iframe>   
+            <iframe id="video" width="647" height="331" allowfullscreen src="https://www.youtube.com/watch?v=Aw73bVIv4cs&list=WL&index=2" frameborder="0"></iframe>   
         </div>
     </div>
 
@@ -103,7 +102,7 @@
     <div id="our-products">
         <!--Title-->
         <div>
-            <h1 id="our-products-title">
+            <h1 id="our-products-title" class="title">
                 OUR PRODUCTS
             </h1>
         </div>
@@ -120,8 +119,9 @@
                 <h2 class="product-title">BREAD</h2>
                 <p class="product-description">Homemade bread perfect to</p> 
                 <p class="product-description">eat with anything.</p>
-                <p class="product-weight">90 g</p>
-                <h2 class="product-price">$10</h2>   
+                <p class="product-weight">90g</p>
+                <h2 class="product-price">$10</h2>
+                <input type="submit" value="SELECT" class="btn"/>   
             </div>
         </div>
 
@@ -133,12 +133,13 @@
             </div>
             
             <!--Description-->
-            <div class="product-text">
+            <div class="product-text" id="croissant-description">
                 <h2 class="product-title">CROISSANT</h2>
                 <p class="product-description">Perfectly baked french croissant</p> 
                 <p class="product-description">to eat at breakfast.</p>
-                <p class="product-weight">70 g</p>
-                <h2 class="product-price">$5</h2>   
+                <p class="product-weight">70g</p>
+                <h2 class="product-price">$5</h2> 
+                <input type="submit" value="SELECT" class="btn"/>  
             </div>
         </div>
 
@@ -150,12 +151,13 @@
             </div>
             
             <!--Description-->
-            <div class="product-text">
+            <div class="product-text" id="muffin-description">
                 <h2 class="product-title">MUFFIN</h2>
                 <p class="product-description">The classic chocolate muffin</p> 
                 <p class="product-description">with chocolate chips.</p>
-                <p class="product-weight">40 g</p>
-                <h2 class="product-price">$3</h2>   
+                <p class="product-weight">40g</p>
+                <h2 class="product-price">$3</h2>
+                <input type="submit" value="SELECT" class="btn"/>   
             </div>
         </div>
     </div>
@@ -164,7 +166,7 @@
     <div id="contact-us">
         <!--Title-->
         <div>
-            <h1 id="contact-us-title">
+            <h1 id="contact-us-title" class="title">
                 CONTACT US
             </h1>
         </div>
@@ -182,12 +184,13 @@
             type="email"
             name="email"
             id="email"
+            class="form-control"
             placeholder="Enter your email adress"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             required
             >
 
-            <input id="submit" type="submit" value="SEND" class="btn"/>
+            <input id="button-form" type="submit" value="SEND" class="btn"/>
         </form>
     </div>
     

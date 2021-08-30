@@ -368,10 +368,10 @@ input::placeholder {
 
     /* Contact us */
     #submit {
-        margin: 1.8rem 0 4rem 9.9rem;
+        margin: 1.8rem 8rem 4rem 9.9rem;
     }
 
     .form-control {
         width: 50%;
-    }
+    }  
 }

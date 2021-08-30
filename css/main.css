@@ -126,8 +126,8 @@ nav {
     font-size: 1.5rem;
     color: var(--black-clr);
     text-align: justify;
-    max-width: 35rem;
-    max-height: 24rem;
+    max-width: 560px;
+    max-height: 384px;
     width: 100%;
     height: auto;
     margin: 0rem 25rem 6rem 0;
@@ -202,7 +202,7 @@ nav {
 }
 
 #muffin {
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 #croissant-description {
@@ -251,6 +251,127 @@ input::placeholder {
     font-size: 1rem;
 }
 
-#button-form {
+#submit {
     margin: 1.8rem 0 4rem 54.5rem;
+}
+
+/* Mobile version */
+@media only screen and (max-width: 480px) {
+    /* Home */
+    #header {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .nav-item + .nav-item {
+        margin-left: 0rem;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #nav-bar {
+        padding: 0 2rem 0 2rem;
+    }
+
+    #header-img {
+        margin: 1rem 1.8rem 0rem 2rem;
+    }
+
+    #title {
+        font-size: 1.8rem;
+    }
+
+    #welcome-section {
+        padding: 0.5rem 0 3rem 0;
+    }
+
+    .title {
+        padding: 1rem;
+    }
+
+    /* About us */
+    #about-us-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #image-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem 2rem 2rem 2rem;
+    }
+
+    #about-us-img {
+        width: auto;
+        height: auto;
+        max-width: 400px;
+        max-height: 300px;
+    }
+
+    #about-us-text {
+        font-size: 1.3rem;
+        color: var(--black-clr);
+        text-align: center;
+        max-width: 400px;
+        max-height: 350px;
+        width: 100%;
+        height: auto;
+        margin: 0rem 2rem 2rem 2rem;
+    }
+
+    /* Our process */
+    #our-process-video {
+        padding: 1rem 2rem 3rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Our products */
+    .product {
+        flex-direction: column;
+        margin-left: -1.5rem;
+    }
+
+    #bread-image {
+        margin: -3rem 2rem 0rem 4rem;
+        margin-top: -3rem;
+    }
+
+    .product-description {
+        display: flex;
+        align-items: center;
+    }
+
+    #croissant-image {
+        margin-top: -3rem;
+    }
+
+    #croissant-description {
+        margin-top: -5rem;
+    }
+
+    #muffin-image {
+        margin-top: 3rem;
+    }
+
+    #muffin-description {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    /* Contact us */
+    #submit {
+        margin: 1.8rem 0 4rem 9.9rem;
+    }
+
+    .form-control {
+        width: 50%;
+    }
 }
